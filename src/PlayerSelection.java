@@ -44,6 +44,11 @@ public class PlayerSelection {
         final double POUND = 0.45359237;
         final int METER = 100;
 
+        // Converting weight to kilograms and height to centimeters
+        double convertWeightToKilograms = weight * POUND;
+        double convertHeightToCentimeters = height * METER;
+
+
 
 
 
