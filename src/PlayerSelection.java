@@ -49,6 +49,12 @@ public class PlayerSelection {
         double convertHeightToCentimeters = height * METER;
 
 
+        // type casting double variables to integers
+        int weightInKg = (int) convertWeightToKilograms;
+        int heightInCm = (int) convertHeightToCentimeters;
+
+
+
 
 
 
