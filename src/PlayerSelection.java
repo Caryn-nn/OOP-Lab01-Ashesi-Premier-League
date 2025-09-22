@@ -122,12 +122,32 @@ public class PlayerSelection {
         // Determining the final Decision of the player
         finalDecision = (Eligibility.equals("Eligible")) ? "Play" : "Rest";
 
-
-
-
-
-
+        // Printing final user information
+        System.out.println();
+        System.out.println("Player Report");
+        System.out.println("Player Name : [" + name + "]");
+        System.out.println("Age : [" + age + "] [" + Category + "]");
+        System.out.println("Height : [" + heightInCm + " cm] ");
+        System.out.println("Weight : [" + weightInKg + " kg] ");
+        System.out.println("Jersey Number : [" + jerseyNumber + "] ");
+        System.out.println("Position : [" + Position + "]");
+        System.out.println("Attacker jersey : [" + attackerJersey + "] ");
+        System.out.println("Eligibility : [" + Eligibility + "]");
+        System.out.println("Lineup Decision : [" + lineupDecision + "]");
+        System.out.println("Final Decision : [" + finalDecision + "]");
 
 
     }
+
 }
+
+
+
+
+
+
+
+
+
+
+
