@@ -60,6 +60,15 @@ public class PlayerSelection {
             Eligibility = "Not eligible";
         }
 
+        // categorizing players by age
+        if (age <= 20) {
+            Category = "RisingStar";
+        } else if (30 >= age) {
+            Category = "Prime PLayer";
+        } else {
+            Category = "Veteran";
+        }
+
 
 
 
