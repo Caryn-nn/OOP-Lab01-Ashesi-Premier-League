@@ -53,6 +53,14 @@ public class PlayerSelection {
         int weightInKg = (int) convertWeightToKilograms;
         int heightInCm = (int) convertHeightToCentimeters;
 
+        // checking if player is eligible to play
+        if (age >= 18 && age <= 35 && weight < 90) {
+            Eligibility = "Eligible";
+        } else {
+            Eligibility = "Not eligible";
+        }
+
+
 
 
 
