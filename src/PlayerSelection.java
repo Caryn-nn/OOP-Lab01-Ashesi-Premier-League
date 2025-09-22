@@ -131,7 +131,7 @@ public class PlayerSelection {
         }
 
 
-        // Determining the final Decision of the player
+        // Determining the final decision of the player
         finalDecision = (Eligibility.equals("Eligible")) ? "Play" : "Rest";
 
 
