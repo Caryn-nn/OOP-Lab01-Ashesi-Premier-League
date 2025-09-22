@@ -7,5 +7,19 @@ import java.util.Scanner;
 public class PlayerSelection {
     public static void main(String[] args) {
 
+        //declaring variables with their appropriate data types
+        String name;
+        int age;
+        double height;
+        double weight;
+        int jerseyNumber;
+        String Category;
+        String lineupDecision = "";
+        String Eligibility;
+        String Position;
+        String finalDecision;
+        String attackerJersey;
+
+
     }
 }
