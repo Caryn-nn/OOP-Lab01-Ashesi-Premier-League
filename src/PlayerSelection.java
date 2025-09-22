@@ -121,7 +121,7 @@ public class PlayerSelection {
 
 
         //making a lineup decision
-        if (age >= 20 && age <= 30) {
+        if (category.equals("Prime PLayer")) {
             if (weightInKg < 80) {
                 lineupDecision = "Lineup";
             } else {
@@ -140,6 +140,7 @@ public class PlayerSelection {
         // Printing final user information
         System.out.println();
         System.out.println("Player Report");
+        System.out.println("--------------");
         System.out.println("Player Name : [" + name + "]");
         System.out.println("Age : [" + age + "] [" + category + "]");
         System.out.println("Height : [" + heightInCm + " cm] ");
