@@ -70,6 +70,40 @@ public class PlayerSelection {
         }
 
 
+        // assigning position based on jersey number
+        switch (jerseyNumber) {
+            case 1:
+                Position = "Goalkeeper";
+                break;
+
+            case 2:
+            case 5:
+                Position = "defender";
+                break;
+
+            case 6:
+            case 8:
+                Position = "midfielder";
+                break;
+
+            case 9:
+                Position = "striker";
+                break;
+
+            case 10:
+                Position = "Playmaker";
+                break;
+
+            case 11:
+                Position = "Winger";
+                break;
+
+            default:
+                Position = "Player position not known";
+
+        }
+
+
 
 
 
