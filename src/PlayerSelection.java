@@ -16,10 +16,10 @@ public class PlayerSelection {
         double height;
         double weight;
         int jerseyNumber;
-        String Category;
+        String category;
         String lineupDecision;
-        String Eligibility;
-        String Position;
+        String eligibility;
+        String position;
         String finalDecision;
         String attackerJersey;
 
@@ -61,53 +61,53 @@ public class PlayerSelection {
 
         // checking if player is eligible to play
         if (age >= 18 && age <= 35 && weightInKg < 90) {
-            Eligibility = "Eligible";
+            eligibility = "Eligible";
         } else {
-            Eligibility = "Not eligible";
+            eligibility = "Not eligible";
         }
 
 
         // categorizing players by age
         if (age <= 20) {
-            Category = "Rising Star";
+            category = "Rising Star";
         } else if (age <= 30) {
-            Category = "Prime PLayer";
+            category = "Prime PLayer";
         } else {
-            Category = "Veteran";
+            category = "Veteran";
         }
 
 
         // assigning position based on jersey number
         switch (jerseyNumber) {
             case 1:
-                Position = "Goalkeeper";
+                position = "Goalkeeper";
                 break;
 
             case 2:
             case 5:
-                Position = "Defender";
+                position = "Defender";
                 break;
 
             case 6:
             case 8:
-                Position = "Midfielder";
+                position = "Midfielder";
                 break;
 
             case 9:
-                Position = "Striker";
+                position = "Striker";
                 break;
 
             case 10:
-                Position = "Playmaker";
+                position = "Playmaker";
                 break;
 
             case 7:
             case 11:
-                Position = "Winger";
+                position = "Winger";
                 break;
 
             default:
-                Position = "Player position not known";
+                position = "Player position not known";
 
         }
 
@@ -134,20 +134,20 @@ public class PlayerSelection {
 
 
         // Determining the final decision of the player
-        finalDecision = (Eligibility.equals("Eligible")) ? "Play" : "Rest";
+        finalDecision = (eligibility.equals("Eligible")) ? "Play" : "Rest";
 
 
         // Printing final user information
         System.out.println();
         System.out.println("Player Report");
         System.out.println("Player Name : [" + name + "]");
-        System.out.println("Age : [" + age + "] [" + Category + "]");
+        System.out.println("Age : [" + age + "] [" + category + "]");
         System.out.println("Height : [" + heightInCm + " cm] ");
         System.out.println("Weight : [" + weightInKg + " kg] ");
         System.out.println("Jersey Number : [" + jerseyNumber + "] ");
-        System.out.println("Position : [" + Position + "]");
+        System.out.println("Position : [" + position + "]");
         System.out.println("Attacker jersey : [" + attackerJersey + "] ");
-        System.out.println("Eligibility : [" + Eligibility + "]");
+        System.out.println("Eligibility : [" + eligibility + "]");
         System.out.println("Lineup Decision : [" + lineupDecision + "]");
         System.out.println("Final Decision : [" + finalDecision + "]");
 
