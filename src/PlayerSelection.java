@@ -103,6 +103,14 @@ public class PlayerSelection {
 
         }
 
+        // checking attacker status
+        if(jerseyNumber == 6 || jerseyNumber==8 || jerseyNumber==9 || jerseyNumber==11){
+            attackerJersey = "Yes";
+        } else{
+            attackerJersey = "No";
+        }
+
+
 
 
 
