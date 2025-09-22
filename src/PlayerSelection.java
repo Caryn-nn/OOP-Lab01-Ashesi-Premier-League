@@ -58,7 +58,7 @@ public class PlayerSelection {
 
 
         // checking if player is eligible to play
-        if (age >= 18 && age <= 35 && weight < 90) {
+        if (age >= 18 && age <= 35 && weightInKg < 90) {
             Eligibility = "Eligible";
         } else {
             Eligibility = "Not eligible";
@@ -68,8 +68,8 @@ public class PlayerSelection {
         // categorizing players by age
         if (age <= 20) {
             Category = "RisingStar";
-        } else if (30 >= age) {
-            Category = "Prime PLayer";
+        } else if (age <= 30) {
+            Category = "PrimePLayer";
         } else {
             Category = "Veteran";
         }
@@ -83,22 +83,23 @@ public class PlayerSelection {
 
             case 2:
             case 5:
-                Position = "defender";
+                Position = "Defender";
                 break;
 
             case 6:
             case 8:
-                Position = "midfielder";
+                Position = "Midfielder";
                 break;
 
             case 9:
-                Position = "striker";
+                Position = "Striker";
                 break;
 
             case 10:
                 Position = "Playmaker";
                 break;
 
+            case 7:
             case 11:
                 Position = "Winger";
                 break;
@@ -110,7 +111,7 @@ public class PlayerSelection {
 
 
         // checking attacker status
-        if(jerseyNumber == 6 || jerseyNumber==8 || jerseyNumber==9 || jerseyNumber==11){
+        if(jerseyNumber == 7 || jerseyNumber==9 || jerseyNumber==10 || jerseyNumber==11){
             attackerJersey = "Yes";
         } else{
             attackerJersey = "No";
@@ -119,9 +120,12 @@ public class PlayerSelection {
 
         //making a lineup decision
         if (age >= 20 && age <= 30) {
-            if (weight < 80) {
+            if (weightInKg < 80) {
                 lineupDecision = "Lineup";
+            } else {
+                lineupDecision = "bench";
             }
+
         } else {
             lineupDecision = "bench";
         }
