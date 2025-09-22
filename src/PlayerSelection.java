@@ -40,5 +40,12 @@ public class PlayerSelection {
         input.close();
 
 
+        // declaring constant variables
+        final double POUND = 0.45359237;
+        final int METER = 100;
+
+
+
+
     }
 }
