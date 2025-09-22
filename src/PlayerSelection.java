@@ -119,6 +119,9 @@ public class PlayerSelection {
             lineupDecision = "bench";
         }
 
+        // Determining the final Decision of the player
+        finalDecision = (Eligibility.equals("Eligible")) ? "Play" : "Rest";
+
 
 
 
