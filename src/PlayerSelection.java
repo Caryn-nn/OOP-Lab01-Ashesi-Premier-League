@@ -15,7 +15,7 @@ public class PlayerSelection {
         double weight;
         int jerseyNumber;
         String Category;
-        String lineupDecision = "";
+        String lineupDecision;
         String Eligibility;
         String Position;
         String finalDecision;
