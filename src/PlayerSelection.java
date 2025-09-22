@@ -67,9 +67,9 @@ public class PlayerSelection {
 
         // categorizing players by age
         if (age <= 20) {
-            Category = "RisingStar";
+            Category = "Rising Star";
         } else if (age <= 30) {
-            Category = "PrimePLayer";
+            Category = "Prime PLayer";
         } else {
             Category = "Veteran";
         }
