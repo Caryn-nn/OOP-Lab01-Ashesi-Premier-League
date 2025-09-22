@@ -20,6 +20,25 @@ public class PlayerSelection {
         String finalDecision;
         String attackerJersey;
 
+        //Accepting input from the user
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter Name: ");
+        name = input.nextLine();
+
+        System.out.print("Enter Age: ");
+        age = input.nextInt();
+
+        System.out.print("Enter Height(in metres): ");
+        height = input.nextDouble();
+
+        System.out.print("Enter Weight(in pounds): ");
+        weight = input.nextDouble();
+
+        System.out.print("Enter Jersey Number: ");
+        jerseyNumber = input.nextInt();
+
+        input.close();
+
 
     }
 }
