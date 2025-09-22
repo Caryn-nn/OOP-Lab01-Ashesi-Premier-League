@@ -123,11 +123,11 @@ public class PlayerSelection {
             if (weightInKg < 80) {
                 lineupDecision = "Lineup";
             } else {
-                lineupDecision = "bench";
+                lineupDecision = "Bench";
             }
 
         } else {
-            lineupDecision = "bench";
+            lineupDecision = "Bench";
         }
 
 
